@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenSplit</title>
+  <meta name="description" content="GreenSplit is an open-source speedrun timer for Windows, Linux, and macOS, with LiveSplit support, branches, plugins, OBS integration, and more.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+
+<header class="site-header">
+  <div class="wrap nav">
+      <a class="brand" href="index.html">
+        GreenSplit
+      </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="download.html">Downloads</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>A modern speedrun timer.</h1>
+        <p class="lede">
+          GreenSplit is a fast speedrun timer written in C++ & QT with modern features,
+          LiveSplit file compatibility, and natively supports Windows, Linux, and macOS.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="download.html">Download</a>
+        </div>
+      </div>
+
+      <!-- Screenshot with default layout (or maybe a nice customized layout? Not sure yet.) -->
+      <div class="image-placeholder" role="img" aria-label="Placeholder for a GreenSplit screenshot">
+        Show Picture Here Eventually :)
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Features</h2>
+        <p>Core features at a glance.</p>
+      </div>
+
+      <div class="grid grid-3">
+
+        <article class="card">
+          <h3>LiveSplit compatible</h3>
+          <p>Import your livesplit settings, and open LiveSplit <code>.lss</code> splits and <code>.lsl</code> layouts natively.</p>
+        </article>
+
+        <article class="card">
+          <h3>LiveSplit server compatible</h3>
+          <p>Works natively with anything that connects to a LiveSplit server.</p>
+        </article>
+
+        <article class="card">
+          <h3>Native therun.gg support</h3>
+          <p>Integrates natively with therun.gg. Automatically uploads runs, and keeps track of stats.</p>
+        </article>
+
+        <article class="card">
+          <h3>Branches</h3>
+          <p>The first speedrun timer with <strong>split branches.</strong> Run a category where the level order can differ?
+          Branches solve this problem.</p>
+        </article>
+
+        <article class="card">
+          <h3>OBS &amp; Twitch Integrations</h3>
+          <p>Connect GreenSplit to OBS through WebSockets, and connect your Twitch account, to create unique interactions!</p>
+        </article>
+
+        <article class="card">
+          <h3>True Transparency</h3>
+          <p>Make your splits background fully transparent. No more fiddling with annoying chroma keys.</p>
+        </article>
+
+        <article class="card">
+          <h3>Generate Comparisons</h3>
+          <p>Set a target time, and generate a comparison for it. Weight the
+          splits yourself, or automatically from averages.</p>
+        </article>
+
+        <article class="card">
+          <h3>Discord Rich Presence</h3>
+          <p>Automatically show your discord friends what category you're currently running, and if you're ahead! <small>or behind :(</small></p>
+        </article>
+
+        <article class="card">
+          <h3>Python Plugin API</h3>
+          <p>Have a feature idea that doesn't exist? Make a plugin for it! Featuring a fully featured Python API, to easily extend the functionality of GreenSplit.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Status -->
+  <section class="section" id="status">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Project status</h2>
+      </div>
+
+      <article class="card status-card">
+        <span class="tag tag-next">Planned</span>
+        <ul class="simple-list">
+          <li>Discord Bot for automatic pings for good paces</li>
+          <li>Connect custom Twitch bot account for deeper Twitch integration</li>
+          <li>Game-time and autosplitter support, including ASL</li>
+          <li>A GreenSplit WebSocket protocol with event signals</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Special Thanks -->
+  <section class="section" id="special-thanks">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Special thanks</h2>
+        <p>
+          Special thanks to
+          <a href="https://github.com/LiveSplit/LiveSplit" target="_blank" rel="noopener noreferrer">LiveSplit</a>
+          for creating such a wonderful open source timer. LiveSplit has been a companion to so many speedrunners for years and years, and this project would not have been possible without the wonderful people who have contributed to it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="section cta">
+    <div class="wrap">
+      <h2>Try GreenSplit</h2>
+      <p>Builds are available for Windows, Linux, and macOS.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="download.html">Download GreenSplit</a>
+        <a class="btn" href="download.html#source">Build from source</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>GreenSplit, MIT licensed. &copy; <span data-year>2026</span></span>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="download.html">Downloads</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
