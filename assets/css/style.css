@@ -161,9 +161,11 @@ code {
   text-decoration: none;
 }
 
-.brand svg {
+.brand img {
   display: block;
-  color: var(--accent);
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
 }
 
 .nav-links {
