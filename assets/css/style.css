@@ -251,17 +251,18 @@ code {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
-  gap: 3.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: 3rem;
   align-items: center;
 }
 
 .hero-copy {
-  max-width: 37rem;
+  max-width: 42rem;
 }
 
 .hero-copy h1 {
   margin-bottom: 1rem;
+  white-space: nowrap;
 }
 
 .hero-copy .lede {
@@ -275,8 +276,8 @@ code {
 /* ---------- hero picture ---------- */
 .image-placeholder,
 .hero-picture {
-  width: min(100%, 440px);
-  aspect-ratio: 4 / 3;
+  width: min(100%, 320px);
+  aspect-ratio: 3 / 4;
   border-radius: var(--radius-lg);
 }
 
@@ -566,6 +567,10 @@ td code {
 }
 
 @media (max-width: 640px) {
+  .hero-copy h1 {
+    white-space: normal;
+  }
+
   .grid-4,
   .grid-3,
   .grid-2 {
