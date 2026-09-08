@@ -16,6 +16,10 @@
   --accent-soft: rgba(70, 209, 127, 0.12);
   --accent-line: rgba(70, 209, 127, 0.35);
 
+  --btn-accent: #3ac077;
+  --btn-accent-hover: #45cd83;
+  --btn-accent-text: #04140b;
+
   --radius: 10px;
   --radius-lg: 14px;
 
@@ -224,16 +228,16 @@ code {
 }
 
 .btn-primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #08110c;
+  background: var(--btn-accent);
+  border-color: var(--btn-accent);
+  color: var(--btn-accent-text);
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  background: #57dd8d;
-  border-color: #57dd8d;
-  color: #08110c;
+  background: var(--btn-accent-hover);
+  border-color: var(--btn-accent-hover);
+  color: var(--btn-accent-text);
 }
 
 .btn-row {
@@ -276,8 +280,8 @@ code {
 /* ---------- hero picture ---------- */
 .image-placeholder,
 .hero-picture {
-  width: min(100%, 320px);
-  aspect-ratio: 3 / 4;
+  width: min(100%, 250px);
+  aspect-ratio: 50 / 87;
   border-radius: var(--radius-lg);
 }
 
@@ -296,6 +300,7 @@ code {
 
 .hero-picture {
   display: block;
+  height: auto;
   object-fit: cover;
   border: 1px solid var(--border);
 }
@@ -434,11 +439,26 @@ td code {
   background: var(--surface);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius);
-  padding: 1.4rem;
+  overflow: hidden;
 }
 
-.platform h3 {
-  margin-bottom: 0.15rem;
+.platform-head {
+  padding: 0.85rem 1.4rem;
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--surface-2);
+}
+
+.platform-head h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+
+.platform-body {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding: 1.4rem;
 }
 
 .platform .arch {

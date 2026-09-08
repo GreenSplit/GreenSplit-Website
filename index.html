@@ -24,6 +24,7 @@
     <nav class="nav-links" id="nav-links">
       <a href="index.html" aria-current="page">Home</a>
       <a href="download.html">Downloads</a>
+      <a href="https://server.greensplit.net" target="_blank" rel="noopener">Discord</a>
     </nav>
   </div>
 </header>
@@ -34,21 +35,18 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <h1>A modern speedrun timer.</h1>
+        <h1>A New Speedrunning Timer</h1>
         <p class="lede">
-          GreenSplit is a fast speedrun timer written in C++ & QT with modern features,
-          LiveSplit file compatibility, and native support for Windows, Linux, and macOS.
+          GreenSplit is a feature rich, multi-platform speedrun timer written in C++ & Qt.<br> It is extremely customizable, and supports your LiveSplit splits & layouts natively.
         </p>
 
         <div class="btn-row">
-          <a class="btn btn-primary" href="download.html">Download</a>
+          <a class="btn btn-primary" href="download.html">Download GreenSplit</a>
         </div>
       </div>
 
-      <!-- Screenshot with default layout (or maybe a nice customized layout? Not sure yet.) -->
-      <div class="image-placeholder" role="img" aria-label="Placeholder for a GreenSplit screenshot">
-        Show Picture Here Eventually :)
-      </div>
+      <img class="hero-picture" src="assets/greensplit-example.png" width="500" height="870"
+        alt="GreenSplit Picture">
     </div>
   </section>
 
@@ -78,6 +76,16 @@
         </article>
 
         <article class="card">
+          <h3>Extensive customization</h3>
+          <p>Customize layouts to your hearts desire with animations, text gradients, borders, label overrides, and much more!</p>
+        </article>
+
+        <article class="card">
+          <h3>Run recap</h3>
+          <p>Get a recap card after every finished run, showing you interesting information about the attempt! Integrates with speedrun.com</p>
+        </article>
+
+        <article class="card">
           <h3>Branches</h3>
           <p>The first speedrun timer with <strong>split branches.</strong> Run a category where the level order can differ?
           Branches solve this problem.</p>
@@ -95,13 +103,18 @@
 
         <article class="card">
           <h3>Generate Comparisons</h3>
-          <p>Set a target time, and generate a comparison for it. Weight the
+          <p>Set a target time, and generate a theory comparison for it. Weight the
           splits yourself, or automatically weight splits by consistency.</p>
         </article>
 
         <article class="card">
           <h3>Discord Rich Presence</h3>
           <p>Automatically show your discord friends what category you're currently running, and if you're ahead! <small>or behind :(</small></p>
+        </article>
+
+        <article class="card">
+          <h3>Discord Bot</h3>
+          <p>Connect the GreenSplit discord bot to your server, to automatically recieve pings when runners you choose are on pace!</p>
         </article>
 
         <article class="card">
@@ -123,10 +136,9 @@
       <article class="card status-card">
         <span class="tag tag-next">Planned</span>
         <ul class="simple-list">
-          <li>Discord Bot for automatic pings for good paces</li>
+          <li>Game time and autosplitter support</li>
           <li>Connect custom Twitch bot account for deeper Twitch integration</li>
-          <li>Game-time and autosplitter support, including ASL</li>
-          <li>A GreenSplit WebSocket protocol with event signals</li>
+          <li>Complete Python plugin API with comprehensive documentation</li>
         </ul>
       </article>
     </div>
@@ -153,7 +165,7 @@
       <p>Builds are available for Windows, Linux, and macOS.</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="download.html">Download GreenSplit</a>
-        <a class="btn" href="download.html#source">Build from source</a>
+        <!--<a class="btn" href="download.html#source">Build from source</a>-->
       </div>
     </div>
   </section>
